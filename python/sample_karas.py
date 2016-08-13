@@ -31,3 +31,27 @@ img_channels = 3
 print('X_train shape:', X_train.shape)
 print(X_train.shape[0], 'train samples')
 print(X_test.shape[0], 'test samples')
+
+np_utils.to_categorical(y_train, nb_classes)
+
+
+import read_image
+
+datasets, labels = read_image.read()
+np.random.shuffle(datasets)
+np.random.shuffle(labels)
+X_train = datasets[:16].reshape(16, 3, 80, 80)
+X_test = datasets[17:].reshape(15, 3, 80, 80)
+y_train = labels[:16]
+y_test = labels[17:]
+
+X_train = X_train.astype('float32') # floatに変換
+X_test = X_test.astype('float32')
+X_train /= 255 # 0 ~ 1の範囲で学習させるため
+X_test /= 255
+
+nb_classes = 3
+
+Y_train = np_utils.to_categorical(y_train, nb_classes) # データのラベルをone-hot表現に変換
+Y_test = np_utils.to_categorical(y_test, nb_classes)
+

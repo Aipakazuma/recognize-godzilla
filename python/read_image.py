@@ -18,31 +18,21 @@ def read_image(image):
 def read():
     series = glob.glob('../data/img/*')
     label = 0
-    results = []
-    results_2 = np.zeros((1, 19200))
+    labels = np.zeros([1], dtype='uint8')
+    results = np.zeros((1, 19200))
     for i in series:
+        label += 1
         images = glob.glob(i + '/*')
-        data_sets = {
-            'data': [],
-            'label': []
-        }
         for image in images:
             r, g, b = read_image(image)
             rgb = np.concatenate((r, g, b), axis=0).reshape(1, 19200)
-            data_sets['data'].append(rgb)
-            # data_sets['label'].append(label)
-            results_2 = np.vstack([results_2, rgb])
-
-        label += 1
-        results.append(data_sets)
-    numpy_array = np.concatenate([np.array(results[0]['data']), np.array(results[1]['data'])], axis=0)
-    # numpy_array_reshape = numpy_array.reshape(numpy_array.shape[0], 3, 80, 80)
-    print(results_2.shape)
-    return results
+            results = np.vstack([results, rgb])
+            labels = np.vstack([labels, np.array([label])])
+    return results, labels
 
 
 def main():
-    read()
+    print(read())
 
 
 if __name__ == '__main__':

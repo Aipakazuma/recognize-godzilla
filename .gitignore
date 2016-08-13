@@ -90,3 +90,6 @@ ENV/
 
 node_modules/
 .idea/
+
+data/
+jupyter/cifar-10-batches-py/

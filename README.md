@@ -10,7 +10,7 @@ I love it.
 (http://www.nicovideo.jp/watch/sm29029071)[http://www.nicovideo.jp/watch/sm29029071]
 
 |名前|ディレクトリ|作品(年代)|
-|:---|:---:|:---:|
+|:---|:---|:---|
 |初ゴジ|01_first_godzilla|ゴジラ(1954)|
 |逆ゴジ|02_counterattack_godzilla|ゴジラの逆襲(1955)|
 |キンゴジ|03_king_kong_godzilla|キングコング対ゴジラ(1962)|
@@ -21,7 +21,7 @@ I love it.
 |息子ゴジ|08_godzilla|怪獣島の決戦 ゴジラの息子|
 |総進撃ゴジ|09_godzilla|<ul><li>怪獣総進撃(1968)</li><li>ゴジラ・ミニラ・ガバラ オール怪獣大進撃(1969)</li><li>ゴジラ対ヘドラ(1971)</li><li>地球攻撃命令 ゴジラ対ガイガン(1972)</li></ul>|
 |メガロゴジ|10_godzilla|<ul><li>ゴジラ対メガロ(1973)</li><li>ゴジラ対メカゴジラ(1974)</li><li>メカゴジラの逆襲(1975)</li></ul>|
-|84ゴジ|11_godzilla|ゴジラ(1984)|
+|84ゴジ|11_84_godzilla|ゴジラ(1984)|
 |ビオゴジ|12_godzilla|ゴジラvsビオランテ(1989)|
 |ギドゴジ|13_godzilla|ゴジラvsキングギドラ(1991)|
 |バトゴジ|14_godzilla|ゴジラvsモスラ(1992)|
@@ -31,9 +31,21 @@ I love it.
 |恐竜|18_godzilla|GODZILLA(1998)|
 |ミレゴジ|19_godzilla|ゴジラ2000 ミレニアム(1999)|
 |ギラゴジ|20_godzilla|ゴジラ×メガギラス G消滅作戦(2000)|
-|GMKゴジ|21_godzilla|ゴジラ・モスラ・キングギドラ 大怪獣総攻撃(2001)|
+|GMKゴジ|21_mechagodzilla_x_godzilla|ゴジラ・モスラ・キングギドラ 大怪獣総攻撃(2001)|
 |機龍ゴジ|22_godzilla|ゴジラ×メカゴジラ(2002)|
 |SOSゴジ|23_godzilla|ゴジラ×モスラ×メカゴジラ 東京SOS(2003)|
 |ファイナルゴジ|24_godzilla|ゴジラ FINAL WARS(2004)|
 |ギャレゴジ|25_godzilla|GODZILLA ゴジラ(2014)|
 |シンゴジラ|26_godzilla|シン・ゴジラ(2016)|
+
+
+# 詰まったメモ
+
+## cifar-10の読み込みがうまくいかない
+
+python3では指定の仕方が違っていた。
+https://teratail.com/questions/28932
+
+
+一応これで解決したけど、そもそも、ソース読めばいいじゃん。と思って読んだら勉強になった。
+

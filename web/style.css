@@ -1,0 +1,34 @@
+html, body {
+    font-family: 'Open Sans';
+}
+
+img {
+    padding: 5px;
+}
+
+.navbar-item img {
+    max-height: 2.75rem;
+}
+
+.navbar.navbar-color {
+    background-color: #87ffb2;
+}
+
+#file-upload-form {
+    padding-bottom: 5px;
+}
+
+#file-upload-form > .file-label {
+    margin: auto;
+}
+
+.preview-window {
+    min-width: 200px;
+    min-height: 200px;
+    border: 5px dashed #eee;
+    padding: 10px;
+}
+
+#probablity {
+    height: 400px;
+}

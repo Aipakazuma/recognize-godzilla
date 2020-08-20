@@ -93,3 +93,6 @@ node_modules/
 
 data/
 jupyter/cifar-10-batches-py/
+.csv
+.DS_Store
+data/
